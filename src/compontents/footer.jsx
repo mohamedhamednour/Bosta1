@@ -3,18 +3,26 @@ import '../App.css';
 import React from 'react';
 import { AiFillFacebook,AiFillTwitterSquare } from "react-icons/ai";
 import { useTranslation, Trans } from "react-i18next";
+import { useContext } from "react";
+import AuthContext from './useContext';
 
 
 
 
 function Footer() {
-  const [t, i18n] = useTranslation()
+         {/* useTranslation this import to store context convrt*/}
 
- 
+  const [t, i18n] = useTranslation()
+       {/* ref this import to store context*/}
+
+
+  const { styleDir} = useContext(AuthContext);
+
   return (
     <>
- 
- <footer id='nonconv2' >
+     {/* ref this in order to convert dir */}
+
+ <footer  ref={styleDir} >
     <div class="container_fluid buttoms">
       <div class="row ">
       <div class="col-12 col-sm-6  lastfooter1">

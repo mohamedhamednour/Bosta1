@@ -1,10 +1,10 @@
 import React from "react";
 import '../App.css';
 import image from './img/bosta.png'
-import { useContext } from "react";
+import { useContext ,useRef} from "react";
 import { IoSearch } from "react-icons/io5";
-import AuthContext from './img/useContext';
-import { useTranslation, Trans } from "react-i18next";
+import AuthContext from './useContext';
+import { useTranslation } from "react-i18next";
 
 
 
@@ -13,12 +13,12 @@ const Navbar = (perpos) => {
 
 
   // used store context 
-  const { handelApi, handelinpt, handelarabic, handeleng } = useContext(AuthContext);
+  const { handelApi, handelinpt, handelarabic, handeleng ,styleDir} = useContext(AuthContext);
 
 
   return (
     <>
-      <nav id="nanconver" class="navbar navbar-expand-lg navbar-light ">
+      <nav  id="navbarr"  class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img id="photonav" src={image} />{t('bosta')}</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
