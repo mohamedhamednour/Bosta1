@@ -4,7 +4,7 @@ task  Tracking Shipment  Bosta
 
 requirement 
 
-git instal 
+git install
 
 npm start 
 
