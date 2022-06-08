@@ -4,12 +4,8 @@ export default
         CurrentStatus: {
             state: "DELIVERED   ",
             timestamp: "2019-07-28T09:34:15.519Z",
-<<<<<<< HEAD
             nameseller :'souq com ',
             hub:'NASR CITY'
-=======
-            nameseller :'souq com '
->>>>>>> 5e0aa182bc9fa61417d3f5fd53c353da6ec5989c
 
         },
         TrackingNumber: "112233",
@@ -19,19 +15,11 @@ export default
         ],
         TransitEvents: [
             {
-<<<<<<< HEAD
                 state: "shipment created          ",
                 timestamp: "2019-07-25T13:05:25.130Z"
             },
             {
                 state: "shipment received            ",
-=======
-                state: "تم إنشاء الشحنة            ",
-                timestamp: "2019-07-25T13:05:25.130Z"
-            },
-            {
-                state: "تم استلام الشحنة            ",
->>>>>>> 5e0aa182bc9fa61417d3f5fd53c353da6ec5989c
                 timestamp: "2019-07-25T20:32:44.154Z",
                 hub: "مدينة نصر"
             },
