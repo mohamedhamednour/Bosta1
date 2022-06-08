@@ -10,6 +10,10 @@ p{
 .audio{
   width: 90%;
 }
+input{
+  background-color: rgb(255, 226, 226);
+  border-radius: 50px;
+}
 
 Link{
   text-decoration: none;
