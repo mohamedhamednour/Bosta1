@@ -1,10 +1,12 @@
 import React from "react";
 import '../App.css';
 import image from './img/bosta.png'
-import { useContext } from "react";
+import { useContext ,useRef} from "react";
 import { IoSearch } from "react-icons/io5";
-import AuthContext from './img/useContext';
-import { useTranslation, Trans } from "react-i18next";
+import AuthContext from './useContext';
+import { useTranslation } from "react-i18next";
+import { Link  ,useNavigate} from "react-router-dom"
+
 
 
 
@@ -13,14 +15,14 @@ const Navbar = (perpos) => {
 
 
   // used store context 
-  const { handelApi, handelinpt, handelarabic, handeleng } = useContext(AuthContext);
+  const { handelApi, handelinpt, handelarabic, handeleng ,styleDir } = useContext(AuthContext);
 
 
   return (
     <>
-      <nav id="nanconver" class="navbar navbar-expand-lg navbar-light ">
+      <nav  id="navbarr"  class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img id="photonav" src={image} />{t('bosta')}</a>
+        <Link class="navbar-brand" to="/">{t('bosta')}</Link>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span style={{ color: "red" }} class="navbar-toggler-icon"></span>
           </button>
@@ -49,11 +51,12 @@ const Navbar = (perpos) => {
 
                     <h2 style={{ color: 'red' }}><strong>{t('trakin')}</strong></h2>
                     <h5>{t('number')}</h5>
-                    <input onKeyDown={handelApi} onChange={handelinpt} /><button onClick={handelApi}> <IoSearch /></button>
+                    <input  onKeyDown={handelApi} onChange={handelinpt} /><button onClick={handelApi}> <IoSearch /></button>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="#"> {t('sign')}</a>
+                <Link class="nav-link "  to="/sign_in">{t('sign')}</Link>
+                  {/* <a class="nav-link " href="#"> {t('sign')}</a> */}
                 </li>
                 <li class="nav-item">
                   <a onClick={handelarabic} id="navarabic" class="nav-link" href="#">عريي</a>
