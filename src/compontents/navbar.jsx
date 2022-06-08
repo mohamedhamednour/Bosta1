@@ -5,8 +5,11 @@ import { useContext ,useRef} from "react";
 import { IoSearch } from "react-icons/io5";
 import AuthContext from './useContext';
 import { useTranslation } from "react-i18next";
+<<<<<<< HEAD
 import { Link  ,useNavigate} from "react-router-dom"
 
+=======
+>>>>>>> 5e0aa182bc9fa61417d3f5fd53c353da6ec5989c
 
 
 
@@ -15,7 +18,11 @@ const Navbar = (perpos) => {
 
 
   // used store context 
+<<<<<<< HEAD
   const { handelApi, handelinpt, handelarabic, handeleng ,styleDir } = useContext(AuthContext);
+=======
+  const { handelApi, handelinpt, handelarabic, handeleng ,styleDir} = useContext(AuthContext);
+>>>>>>> 5e0aa182bc9fa61417d3f5fd53c353da6ec5989c
 
 
   return (

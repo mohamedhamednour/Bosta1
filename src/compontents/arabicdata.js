@@ -4,8 +4,12 @@ export  default
         CurrentStatus: {
             state: "تم التوصيل        ",
             timestamp: "2019-07-28T09:34:15.519Z",
+<<<<<<< HEAD
             nameseller :'سوق كوم ',
             hub:'مدينة نصر'
+=======
+            nameseller :'سوق كوم '
+>>>>>>> 5e0aa182bc9fa61417d3f5fd53c353da6ec5989c
         },
         TrackingNumber: "112233",
         TrackingURL: "bosta.co/tracking-shipment/?track_num=112233",
